@@ -69,7 +69,7 @@ export function OwnedObjects() {
               <pre>
                 {JSON.stringify(
                   rest,
-                  (key, value) =>
+                  (_key, value) =>
                     typeof value === "bigint" ? value.toString() : value,
                   2,
                 )}
